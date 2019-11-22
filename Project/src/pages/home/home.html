@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>E-Weather</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid *ngIf="weather">
+    <ion-row>
+      
+      <ion-col width-50 offset-25>
+    
+        <h2 class="desc">{{weather.location.name}}, {{weather.location.country}}</h2>
+        <h4 class="desc">{{weather.current.observation_time}}</h4>
+        <div class="icon"><img src="{{weather.current.weather_icons}}" alt=""></div>
+        <h3 class="desc">{{weather.current.weather_descriptions}}
+        </h3>
+       <h4 class="temp">{{weather.current.temperature}}&deg;C</h4>
+ 
+       </ion-col>
+       
+    
+    </ion-row>
+    <ion-row>
+        <ion-col width-100>
+          <ion-list>
+            <ion-item>
+                <strong>Date:</strong> {{weather.location.localtime}}
+            </ion-item> 
+            <ion-item>
+              <strong>Is Day:</strong> {{weather.current.is_day}}
+            </ion-item> 
+              <ion-item>
+                <strong>Region:</strong> {{weather.location.region}}
+              </ion-item>
+            
+              <ion-item>
+                  <strong>Wind Dir:</strong> {{weather.current.wind_dir}}
+                </ion-item>
+                <ion-item>
+                    <strong>Wind Degree:</strong> {{weather.current.wind_degree}}
+                  </ion-item>
+            
+          </ion-list>
+  
+        </ion-col>
+      </ion-row>
+    
+  </ion-grid>
+ </ion-content>

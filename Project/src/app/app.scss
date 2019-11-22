@@ -1,0 +1,60 @@
+@font-face{
+    font-family: 'helvetica';
+    src: url("../assets/fonts/helvetica/HelveticaNeue Thin.ttf");
+  }
+  
+  ion-tabs {
+    font-family:helvetica!important; 
+ }
+ 
+
+ion-content {
+    background: url('../../assets/imgs/bg.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    font-family:helvetica!important;
+   }
+strong{
+    font-weight: bolder;
+}
+.home{
+ background: color($colors,light);
+ color:#ffffff;
+ 
+}
+
+.toolbar-title{
+    text-align: center;
+}
+
+.tab-md .tab-button-icon{
+    color:#ccc;
+}
+
+.temp{
+    font-size: 90px;
+    text-align: center;
+    font-weight: normal;
+    color:#ffffff;
+
+}
+.location, .icon, .desc{
+    text-align: center;
+    color:#ffffff;
+
+}
+.icon img{
+    width:100px;
+}
+.location{
+    font-size: 40px;
+    text-align: center;
+
+}
+.desc{
+    font-size: 30px;
+}
+
